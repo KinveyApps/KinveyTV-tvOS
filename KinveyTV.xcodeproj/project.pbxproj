@@ -1,0 +1,615 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		572E0BDF1F15830C001DF63B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 572E0BDE1F15830C001DF63B /* AppDelegate.swift */; };
+		572E0BE41F15830C001DF63B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 572E0BE21F15830C001DF63B /* Main.storyboard */; };
+		572E0BE61F15830C001DF63B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 572E0BE51F15830C001DF63B /* Assets.xcassets */; };
+		572E0BF11F15830C001DF63B /* KinveyTVTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 572E0BF01F15830C001DF63B /* KinveyTVTests.swift */; };
+		572E0BFC1F15830C001DF63B /* KinveyTVUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 572E0BFB1F15830C001DF63B /* KinveyTVUITests.swift */; };
+		572E0C0A1F1585CB001DF63B /* MainCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 572E0C091F1585CB001DF63B /* MainCollectionViewController.swift */; };
+		572E0C0C1F158AA5001DF63B /* VideoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 572E0C0B1F158AA5001DF63B /* VideoCollectionViewCell.swift */; };
+		572E0C1A1F16965E001DF63B /* KeychainAccess.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 572E0C121F16965E001DF63B /* KeychainAccess.framework */; };
+		572E0C1B1F16965E001DF63B /* Kinvey.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 572E0C131F16965E001DF63B /* Kinvey.framework */; };
+		572E0C1C1F16965E001DF63B /* ObjectMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 572E0C141F16965E001DF63B /* ObjectMapper.framework */; };
+		572E0C1D1F16965E001DF63B /* PromiseKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 572E0C151F16965E001DF63B /* PromiseKit.framework */; };
+		572E0C1E1F16965E001DF63B /* PubNub.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 572E0C161F16965E001DF63B /* PubNub.framework */; };
+		572E0C1F1F16965E001DF63B /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 572E0C171F16965E001DF63B /* Realm.framework */; };
+		572E0C201F16965E001DF63B /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 572E0C181F16965E001DF63B /* RealmSwift.framework */; };
+		572E0C211F16965E001DF63B /* XCGLogger.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 572E0C191F16965E001DF63B /* XCGLogger.framework */; };
+		572E0C231F169887001DF63B /* Realm.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 572E0C171F16965E001DF63B /* Realm.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		572E0C241F169898001DF63B /* XCGLogger.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 572E0C191F16965E001DF63B /* XCGLogger.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		572E0C251F1698A9001DF63B /* ObjectMapper.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 572E0C141F16965E001DF63B /* ObjectMapper.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		572E0C261F1698BB001DF63B /* RealmSwift.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 572E0C181F16965E001DF63B /* RealmSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		572E0C271F1698CB001DF63B /* Kinvey.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 572E0C131F16965E001DF63B /* Kinvey.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		572E0C281F1698DC001DF63B /* KeychainAccess.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 572E0C121F16965E001DF63B /* KeychainAccess.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		572E0C2A1F1698F1001DF63B /* PubNub.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 572E0C161F16965E001DF63B /* PubNub.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		572E0C2B1F169900001DF63B /* PromiseKit.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 572E0C151F16965E001DF63B /* PromiseKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		572E0C2D1F169C65001DF63B /* Video.swift in Sources */ = {isa = PBXBuildFile; fileRef = 572E0C2C1F169C65001DF63B /* Video.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		572E0BED1F15830C001DF63B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 572E0BD31F15830C001DF63B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 572E0BDA1F15830C001DF63B;
+			remoteInfo = KinveyTV;
+		};
+		572E0BF81F15830C001DF63B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 572E0BD31F15830C001DF63B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 572E0BDA1F15830C001DF63B;
+			remoteInfo = KinveyTV;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		572E0C221F16987B001DF63B /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				572E0C231F169887001DF63B /* Realm.framework in CopyFiles */,
+				572E0C241F169898001DF63B /* XCGLogger.framework in CopyFiles */,
+				572E0C251F1698A9001DF63B /* ObjectMapper.framework in CopyFiles */,
+				572E0C261F1698BB001DF63B /* RealmSwift.framework in CopyFiles */,
+				572E0C271F1698CB001DF63B /* Kinvey.framework in CopyFiles */,
+				572E0C281F1698DC001DF63B /* KeychainAccess.framework in CopyFiles */,
+				572E0C2A1F1698F1001DF63B /* PubNub.framework in CopyFiles */,
+				572E0C2B1F169900001DF63B /* PromiseKit.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		572E0BDB1F15830C001DF63B /* Kinvey TV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Kinvey TV.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		572E0BDE1F15830C001DF63B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		572E0BE31F15830C001DF63B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		572E0BE51F15830C001DF63B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		572E0BE71F15830C001DF63B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		572E0BEC1F15830C001DF63B /* KinveyTVTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KinveyTVTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		572E0BF01F15830C001DF63B /* KinveyTVTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KinveyTVTests.swift; sourceTree = "<group>"; };
+		572E0BF21F15830C001DF63B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		572E0BF71F15830C001DF63B /* KinveyTVUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KinveyTVUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		572E0BFB1F15830C001DF63B /* KinveyTVUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KinveyTVUITests.swift; sourceTree = "<group>"; };
+		572E0BFD1F15830C001DF63B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		572E0C091F1585CB001DF63B /* MainCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainCollectionViewController.swift; sourceTree = "<group>"; };
+		572E0C0B1F158AA5001DF63B /* VideoCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoCollectionViewCell.swift; sourceTree = "<group>"; };
+		572E0C121F16965E001DF63B /* KeychainAccess.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = KeychainAccess.framework; path = Carthage/Build/tvOS/KeychainAccess.framework; sourceTree = "<group>"; };
+		572E0C131F16965E001DF63B /* Kinvey.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Kinvey.framework; path = Carthage/Build/tvOS/Kinvey.framework; sourceTree = "<group>"; };
+		572E0C141F16965E001DF63B /* ObjectMapper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ObjectMapper.framework; path = Carthage/Build/tvOS/ObjectMapper.framework; sourceTree = "<group>"; };
+		572E0C151F16965E001DF63B /* PromiseKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PromiseKit.framework; path = Carthage/Build/tvOS/PromiseKit.framework; sourceTree = "<group>"; };
+		572E0C161F16965E001DF63B /* PubNub.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PubNub.framework; path = Carthage/Build/tvOS/PubNub.framework; sourceTree = "<group>"; };
+		572E0C171F16965E001DF63B /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Realm.framework; path = Carthage/Build/tvOS/Realm.framework; sourceTree = "<group>"; };
+		572E0C181F16965E001DF63B /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RealmSwift.framework; path = Carthage/Build/tvOS/RealmSwift.framework; sourceTree = "<group>"; };
+		572E0C191F16965E001DF63B /* XCGLogger.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCGLogger.framework; path = Carthage/Build/tvOS/XCGLogger.framework; sourceTree = "<group>"; };
+		572E0C2C1F169C65001DF63B /* Video.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Video.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		572E0BD81F15830C001DF63B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				572E0C1F1F16965E001DF63B /* Realm.framework in Frameworks */,
+				572E0C211F16965E001DF63B /* XCGLogger.framework in Frameworks */,
+				572E0C1C1F16965E001DF63B /* ObjectMapper.framework in Frameworks */,
+				572E0C201F16965E001DF63B /* RealmSwift.framework in Frameworks */,
+				572E0C1B1F16965E001DF63B /* Kinvey.framework in Frameworks */,
+				572E0C1A1F16965E001DF63B /* KeychainAccess.framework in Frameworks */,
+				572E0C1E1F16965E001DF63B /* PubNub.framework in Frameworks */,
+				572E0C1D1F16965E001DF63B /* PromiseKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		572E0BE91F15830C001DF63B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		572E0BF41F15830C001DF63B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		572E0BD21F15830C001DF63B = {
+			isa = PBXGroup;
+			children = (
+				572E0BDD1F15830C001DF63B /* KinveyTV */,
+				572E0BEF1F15830C001DF63B /* KinveyTVTests */,
+				572E0BFA1F15830C001DF63B /* KinveyTVUITests */,
+				572E0BDC1F15830C001DF63B /* Products */,
+				572E0C0F1F16964A001DF63B /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		572E0BDC1F15830C001DF63B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				572E0BDB1F15830C001DF63B /* Kinvey TV.app */,
+				572E0BEC1F15830C001DF63B /* KinveyTVTests.xctest */,
+				572E0BF71F15830C001DF63B /* KinveyTVUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		572E0BDD1F15830C001DF63B /* KinveyTV */ = {
+			isa = PBXGroup;
+			children = (
+				572E0BDE1F15830C001DF63B /* AppDelegate.swift */,
+				572E0BE21F15830C001DF63B /* Main.storyboard */,
+				572E0BE51F15830C001DF63B /* Assets.xcassets */,
+				572E0BE71F15830C001DF63B /* Info.plist */,
+				572E0C091F1585CB001DF63B /* MainCollectionViewController.swift */,
+				572E0C0B1F158AA5001DF63B /* VideoCollectionViewCell.swift */,
+				572E0C2C1F169C65001DF63B /* Video.swift */,
+			);
+			path = KinveyTV;
+			sourceTree = "<group>";
+		};
+		572E0BEF1F15830C001DF63B /* KinveyTVTests */ = {
+			isa = PBXGroup;
+			children = (
+				572E0BF01F15830C001DF63B /* KinveyTVTests.swift */,
+				572E0BF21F15830C001DF63B /* Info.plist */,
+			);
+			path = KinveyTVTests;
+			sourceTree = "<group>";
+		};
+		572E0BFA1F15830C001DF63B /* KinveyTVUITests */ = {
+			isa = PBXGroup;
+			children = (
+				572E0BFB1F15830C001DF63B /* KinveyTVUITests.swift */,
+				572E0BFD1F15830C001DF63B /* Info.plist */,
+			);
+			path = KinveyTVUITests;
+			sourceTree = "<group>";
+		};
+		572E0C0F1F16964A001DF63B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				572E0C121F16965E001DF63B /* KeychainAccess.framework */,
+				572E0C131F16965E001DF63B /* Kinvey.framework */,
+				572E0C141F16965E001DF63B /* ObjectMapper.framework */,
+				572E0C151F16965E001DF63B /* PromiseKit.framework */,
+				572E0C161F16965E001DF63B /* PubNub.framework */,
+				572E0C171F16965E001DF63B /* Realm.framework */,
+				572E0C181F16965E001DF63B /* RealmSwift.framework */,
+				572E0C191F16965E001DF63B /* XCGLogger.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		572E0BDA1F15830C001DF63B /* Kinvey TV */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 572E0C001F15830C001DF63B /* Build configuration list for PBXNativeTarget "Kinvey TV" */;
+			buildPhases = (
+				572E0BD71F15830C001DF63B /* Sources */,
+				572E0BD81F15830C001DF63B /* Frameworks */,
+				572E0BD91F15830C001DF63B /* Resources */,
+				572E0C221F16987B001DF63B /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Kinvey TV";
+			productName = KinveyTV;
+			productReference = 572E0BDB1F15830C001DF63B /* Kinvey TV.app */;
+			productType = "com.apple.product-type.application";
+		};
+		572E0BEB1F15830C001DF63B /* KinveyTVTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 572E0C031F15830C001DF63B /* Build configuration list for PBXNativeTarget "KinveyTVTests" */;
+			buildPhases = (
+				572E0BE81F15830C001DF63B /* Sources */,
+				572E0BE91F15830C001DF63B /* Frameworks */,
+				572E0BEA1F15830C001DF63B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				572E0BEE1F15830C001DF63B /* PBXTargetDependency */,
+			);
+			name = KinveyTVTests;
+			productName = KinveyTVTests;
+			productReference = 572E0BEC1F15830C001DF63B /* KinveyTVTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		572E0BF61F15830C001DF63B /* KinveyTVUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 572E0C061F15830C001DF63B /* Build configuration list for PBXNativeTarget "KinveyTVUITests" */;
+			buildPhases = (
+				572E0BF31F15830C001DF63B /* Sources */,
+				572E0BF41F15830C001DF63B /* Frameworks */,
+				572E0BF51F15830C001DF63B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				572E0BF91F15830C001DF63B /* PBXTargetDependency */,
+			);
+			name = KinveyTVUITests;
+			productName = KinveyTVUITests;
+			productReference = 572E0BF71F15830C001DF63B /* KinveyTVUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		572E0BD31F15830C001DF63B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = Kinvey;
+				TargetAttributes = {
+					572E0BDA1F15830C001DF63B = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 5W7CYNR7UE;
+						ProvisioningStyle = Automatic;
+					};
+					572E0BEB1F15830C001DF63B = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 5W7CYNR7UE;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 572E0BDA1F15830C001DF63B;
+					};
+					572E0BF61F15830C001DF63B = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 5W7CYNR7UE;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 572E0BDA1F15830C001DF63B;
+					};
+				};
+			};
+			buildConfigurationList = 572E0BD61F15830C001DF63B /* Build configuration list for PBXProject "KinveyTV" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 572E0BD21F15830C001DF63B;
+			productRefGroup = 572E0BDC1F15830C001DF63B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				572E0BDA1F15830C001DF63B /* Kinvey TV */,
+				572E0BEB1F15830C001DF63B /* KinveyTVTests */,
+				572E0BF61F15830C001DF63B /* KinveyTVUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		572E0BD91F15830C001DF63B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				572E0BE61F15830C001DF63B /* Assets.xcassets in Resources */,
+				572E0BE41F15830C001DF63B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		572E0BEA1F15830C001DF63B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		572E0BF51F15830C001DF63B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		572E0BD71F15830C001DF63B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				572E0C0C1F158AA5001DF63B /* VideoCollectionViewCell.swift in Sources */,
+				572E0C2D1F169C65001DF63B /* Video.swift in Sources */,
+				572E0BDF1F15830C001DF63B /* AppDelegate.swift in Sources */,
+				572E0C0A1F1585CB001DF63B /* MainCollectionViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		572E0BE81F15830C001DF63B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				572E0BF11F15830C001DF63B /* KinveyTVTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		572E0BF31F15830C001DF63B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				572E0BFC1F15830C001DF63B /* KinveyTVUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		572E0BEE1F15830C001DF63B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 572E0BDA1F15830C001DF63B /* Kinvey TV */;
+			targetProxy = 572E0BED1F15830C001DF63B /* PBXContainerItemProxy */;
+		};
+		572E0BF91F15830C001DF63B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 572E0BDA1F15830C001DF63B /* Kinvey TV */;
+			targetProxy = 572E0BF81F15830C001DF63B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		572E0BE21F15830C001DF63B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				572E0BE31F15830C001DF63B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		572E0BFE1F15830C001DF63B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = appletvos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 10.2;
+			};
+			name = Debug;
+		};
+		572E0BFF1F15830C001DF63B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = appletvos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 10.2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		572E0C011F15830C001DF63B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				DEVELOPMENT_TEAM = 5W7CYNR7UE;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/tvOS",
+				);
+				INFOPLIST_FILE = KinveyTV/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kinvey.KinveyTV;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		572E0C021F15830C001DF63B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				DEVELOPMENT_TEAM = 5W7CYNR7UE;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/tvOS",
+				);
+				INFOPLIST_FILE = KinveyTV/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kinvey.KinveyTV;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		572E0C041F15830C001DF63B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 5W7CYNR7UE;
+				INFOPLIST_FILE = KinveyTVTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kinvey.KinveyTVTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KinveyTV.app/KinveyTV";
+			};
+			name = Debug;
+		};
+		572E0C051F15830C001DF63B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 5W7CYNR7UE;
+				INFOPLIST_FILE = KinveyTVTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kinvey.KinveyTVTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KinveyTV.app/KinveyTV";
+			};
+			name = Release;
+		};
+		572E0C071F15830C001DF63B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 5W7CYNR7UE;
+				INFOPLIST_FILE = KinveyTVUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kinvey.KinveyTVUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = KinveyTV;
+			};
+			name = Debug;
+		};
+		572E0C081F15830C001DF63B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 5W7CYNR7UE;
+				INFOPLIST_FILE = KinveyTVUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kinvey.KinveyTVUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = KinveyTV;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		572E0BD61F15830C001DF63B /* Build configuration list for PBXProject "KinveyTV" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				572E0BFE1F15830C001DF63B /* Debug */,
+				572E0BFF1F15830C001DF63B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		572E0C001F15830C001DF63B /* Build configuration list for PBXNativeTarget "Kinvey TV" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				572E0C011F15830C001DF63B /* Debug */,
+				572E0C021F15830C001DF63B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		572E0C031F15830C001DF63B /* Build configuration list for PBXNativeTarget "KinveyTVTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				572E0C041F15830C001DF63B /* Debug */,
+				572E0C051F15830C001DF63B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		572E0C061F15830C001DF63B /* Build configuration list for PBXNativeTarget "KinveyTVUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				572E0C071F15830C001DF63B /* Debug */,
+				572E0C081F15830C001DF63B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 572E0BD31F15830C001DF63B /* Project object */;
+}

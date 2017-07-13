@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.AppleTV.Storyboard" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="AppleTV" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Y3F-hQ-zUc">
+    <device id="appleTV" orientation="landscape">
+        <adaptation id="light"/>
+    </device>
+    <dependencies>
+        <deployment identifier="tvOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="TU6-dg-eX0">
+            <objects>
+                <navigationController id="Y3F-hQ-zUc" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="dBe-jZ-zZ6">
+                        <rect key="frame" x="0.0" y="0.0" width="1920" height="145"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="M41-Lf-a0c" kind="relationship" relationship="rootViewController" id="LhD-zS-kcb"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0Ya-yV-mYx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-4922" y="-924"/>
+        </scene>
+        <!--Main Collection View Controller-->
+        <scene sceneID="mtS-5U-YfR">
+            <objects>
+                <collectionViewController id="M41-Lf-a0c" customClass="MainCollectionViewController" customModule="Kinvey_TV" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="5zH-6G-7hA">
+                        <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="91x-nq-P0g">
+                            <size key="itemSize" width="520" height="480"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="40" minY="0.0" maxX="40" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="VideoCell" id="L1w-RG-EM1" customClass="VideoCollectionViewCell" customModule="Kinvey_TV" customModuleProvider="target">
+                                <rect key="frame" x="40" y="0.0" width="520" height="480"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="520" height="480"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" adjustsImageWhenAncestorFocused="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DOU-ea-IoB">
+                                            <rect key="frame" x="20" y="0.0" width="480" height="360"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KA0-wG-9yi">
+                                            <rect key="frame" x="0.0" y="460" width="520" height="0.0"/>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </view>
+                                <constraints>
+                                    <constraint firstItem="KA0-wG-9yi" firstAttribute="centerX" secondItem="L1w-RG-EM1" secondAttribute="centerX" id="VIz-Up-Kpf"/>
+                                    <constraint firstItem="KA0-wG-9yi" firstAttribute="width" secondItem="L1w-RG-EM1" secondAttribute="width" id="axg-hL-KG0"/>
+                                    <constraint firstAttribute="bottomMargin" secondItem="KA0-wG-9yi" secondAttribute="bottom" constant="12" id="wHU-z4-1tz"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="thumbnailImageView" destination="DOU-ea-IoB" id="Zt5-Et-84C"/>
+                                    <outlet property="titleLabel" destination="KA0-wG-9yi" id="GFe-TU-oPX"/>
+                                </connections>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="M41-Lf-a0c" id="PIL-lB-Dwy"/>
+                            <outlet property="delegate" destination="M41-Lf-a0c" id="km4-Dg-Cry"/>
+                        </connections>
+                    </collectionView>
+                    <navigationItem key="navigationItem" id="sMB-Tg-uhw"/>
+                    <connections>
+                        <segue destination="44f-HI-Neh" kind="show" identifier="play" id="kzo-di-Lpk"/>
+                    </connections>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="c8b-tw-fSa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2600" y="-924"/>
+        </scene>
+        <!--AV Player View Controller-->
+        <scene sceneID="PrI-c7-QSH">
+            <objects>
+                <avPlayerViewController videoGravity="AVLayerVideoGravityResizeAspect" id="44f-HI-Neh" sceneMemberID="viewController">
+                    <connections>
+                        <segue destination="QYS-6m-gBs" kind="unwind" identifier="back" unwindAction="unwindToMainWithSegue:" id="TEy-GF-RLa"/>
+                    </connections>
+                </avPlayerViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="E80-a0-ZfK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="QYS-6m-gBs" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="-457" y="-924"/>
+        </scene>
+    </scenes>
+</document>
